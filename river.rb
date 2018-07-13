@@ -3,4 +3,9 @@ class River
   def initialize(name)
     @name = name 
   end 
+  def flood 
+   @discharge = discharge * 1.3 
+  end 
+  def dry_up 
+    @discharge *= .5 
 end 
